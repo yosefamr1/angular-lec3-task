@@ -1,2 +1,14 @@
 <!-- <app-template-forms/> -->
-<app-reactive-forms/>
+<!-- <app-reactive-forms/> -->
+
+<div class="container">
+    <div class="content">
+        <button (click)="currentForm = 'template'">Template Form</button>
+        <button (click)="currentForm = 'reactive'">Reactive Form</button>
+    </div>
+</div>
+
+
+<app-template-forms *ngIf="currentForm === 'template'"></app-template-forms>
+<app-reactive-forms *ngIf="currentForm === 'reactive'"></app-reactive-forms>
+

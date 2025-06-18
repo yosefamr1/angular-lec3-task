@@ -6,7 +6,7 @@
   form {
     border-radius: 2rem;
     margin: auto;
-    width: 40%;
+    width: 100%;
     padding: 2rem;
     background-color: rgb(128, 128, 128);
 
@@ -27,18 +27,19 @@
     .button-div {
       text-align: center;
       button {
+        &:disabled {
+          opacity: 0.5;
+        };
         color: white;
         background-color: rgb(48, 48, 48);
         padding: 0.5rem 2rem;
         border-radius: 2rem;
-        &:disabled {
-          opacity: 0.5;
-        }
-      }
-      button:hover {
+        &:hover {
         cursor: pointer;
-        background-color: rgb(82, 82, 82);
+        // background-color: rgb(82, 82, 82);
       }
+      }
+      
     }
   }
 }
